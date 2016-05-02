@@ -3,11 +3,11 @@ import React from 'react'
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
-import rootReducers from './reducers'
+import AllReducers from './reducers'
 
 import MyApp from './components/MyApp'
 
-let store = createStore(rootReducers)
+let store = createStore(AllReducers);
 
 const rootEL = document.getElementById('react-app');
 
