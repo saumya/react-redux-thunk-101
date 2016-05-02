@@ -17,8 +17,8 @@ npm install --save-dev webpack
 npm install --save react
 npm install --save react-dom
 npm install --save redux
-npm install --save react-redux
 
+npm install --save react-redux
 npm install --save redux-thunk
 ```
 
