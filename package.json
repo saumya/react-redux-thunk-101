@@ -4,6 +4,8 @@
   "description": "A react redux thunk experiment",
   "main": "index.js",
   "scripts": {
+    "2js": "babel --presets react,es2015 src --out-dir buildReact",
+    "pack": "webpack buildReact/index.js build/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
