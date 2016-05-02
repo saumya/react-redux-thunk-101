@@ -2,12 +2,14 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
-import { createStore } from 'redux'
+import { createStore, applyMiddleware } from 'redux'
 import AllReducers from './reducers'
+
+import thunkMiddleware from 'redux-thunk'
 
 import MyApp from './components/MyApp'
 
-let store = createStore(AllReducers);
+let store = createStore(AllReducers,applyMiddleware(thunkMiddleware));
 
 const rootEL = document.getElementById('react-app');
 
