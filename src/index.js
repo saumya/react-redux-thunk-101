@@ -5,11 +5,11 @@ import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux'
 import AllReducers from './reducers'
 
-import thunkMiddleware from 'redux-thunk'
+import thunk from 'redux-thunk'
 
 import MyApp from './components/MyApp'
 
-let store = createStore(AllReducers,applyMiddleware(thunkMiddleware));
+let store = createStore(AllReducers,applyMiddleware(thunk));
 
 const rootEL = document.getElementById('react-app');
 
