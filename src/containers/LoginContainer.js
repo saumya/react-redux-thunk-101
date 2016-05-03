@@ -3,7 +3,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 //import { addTodo } from '../actions'
 
-let Login = ({ dispatch }) => {
+let LoginContainer = ({ dispatch }) => {
   var uName,uPassword ;
   var that = this ;
   return (
@@ -11,11 +11,11 @@ let Login = ({ dispatch }) => {
       <form onSubmit={e => {
         e.preventDefault()
 
-        console.group("Login : '%s'", 'Login');
-        console.log('Login');
+        console.group("LoginContainer : '%s'", 'Login');
+        console.log('LoginContainer');
         console.log(dispatch);
-        console.log('Login : Submit : uName', uName.value.trim());
-        console.log('Login : Submit : uPassword', uPassword.value.trim());
+        console.log('LoginContainer : Submit : uName', uName.value.trim());
+        console.log('LoginContainer : Submit : uPassword', uPassword.value.trim());
         console.groupEnd();
 
         if (!uName.value.trim() || !uPassword.value.trim() ) {
@@ -33,5 +33,5 @@ let Login = ({ dispatch }) => {
   )
 }
 
-Login = connect()(Login)
-export default Login
+LoginContainer = connect()(LoginContainer)
+export default LoginContainer

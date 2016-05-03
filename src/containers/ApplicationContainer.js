@@ -35,12 +35,13 @@ import React from 'react'
 import AppConstants from '../util/AppConstants'
 
 import Menu from '../components/Menu.react'
-import Login from '../components/Login.react'
+//import Login from '../components/Login.react'
+import LoginContainer from '../containers/LoginContainer'
 
 const App = () => (
   <div>
     <Menu />
-    <Login />
+    <LoginContainer />
     Welcome to React-Redux-Thunk 101
     <div> version {AppConstants.VERSION} </div>
     <div> by {AppConstants.AUTHOR} </div>
