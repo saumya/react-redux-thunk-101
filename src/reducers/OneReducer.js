@@ -8,7 +8,7 @@ const OneReducer = (state={}, action) => {
     a = state.called + 1;
   }
   var newState = {version:0.1,called:a};
-  console.log('OneReducer : state',state);
+  console.log('OneReducer : newState',newState);
   console.groupEnd();
 
   return newState;

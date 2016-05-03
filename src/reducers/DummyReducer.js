@@ -8,7 +8,7 @@ const DummyReducer = (state={}, action) => {
     a = state.called + 1;
   }
   var newState = {version:0.1,called:a};
-  console.log('DummyReducer : state',state);
+  console.log('DummyReducer : newState',newState);
   console.groupEnd();
 
   return newState;
