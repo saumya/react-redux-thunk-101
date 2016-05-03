@@ -3,6 +3,7 @@ React-Redux-Thunk-101
 
 [REST calls / API calls][2] in study using [Thunk middleware][3] for React
 
+Referring [Example codes][4]
 
 
 Setup
@@ -22,7 +23,14 @@ npm install --save react-redux
 npm install --save redux-thunk
 ```
 
+Then run
+```
+npm run 2js
+npm run pack
+```
+
 
 [1]: http://redux.js.org/docs/basics/ExampleTodoList.html
 [2]: http://redux.js.org/docs/advanced/AsyncActions.html
 [3]: https://github.com/gaearon/redux-thunk
+[4]: github.com/reactjs/redux/blob/master/examples
