@@ -9,7 +9,18 @@ import thunk from 'redux-thunk'
 
 import ApplicationContainer from './containers/ApplicationContainer'
 
-let store = createStore(AllInOneReducer,applyMiddleware(thunk));
+// initial state must have keys as the combineReducers
+var initialState = {
+  DummyReducer:{version:0,called:0},
+  OneReducer:{version:0,called:0}
+}
+//
+//var store = createStore(reducer, initialState,applyMiddleware);
+// or
+//var store = createStore(reducer,applyMiddleware);
+//
+let store = createStore(AllInOneReducer,initialState,applyMiddleware(thunk));
+
 
 const rootEL = document.getElementById('react-app');
 
