@@ -3,13 +3,13 @@ import React from 'react'
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux'
-import AllReducers from './reducers'
+import AllInOneReducer from './reducers'
 
 import thunk from 'redux-thunk'
 
 import ApplicationContainer from './containers/ApplicationContainer'
 
-let store = createStore(AllReducers,applyMiddleware(thunk));
+let store = createStore(AllInOneReducer,applyMiddleware(thunk));
 
 const rootEL = document.getElementById('react-app');
 
