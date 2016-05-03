@@ -6,6 +6,8 @@ React-Redux-Thunk-101
 ### References
 1. Start using React Redux [without ES6 or Webpack.][5]
 2. Official [Example codes][4]
+3. Example of [An app to enjoy a music channel with your favorite videos][6]
+4. [React Rocks][7] examples
 
 Setup
 ```
@@ -36,3 +38,5 @@ npm run pack
 [3]: https://github.com/gaearon/redux-thunk
 [4]: github.com/reactjs/redux/blob/master/examples
 [5]: https://medium.com/@firasd/quick-start-tutorial-using-redux-in-react-apps-89b142d6c5c1
+[6]: https://github.com/fusenlabs/20v
+[7]: https://react.rocks
