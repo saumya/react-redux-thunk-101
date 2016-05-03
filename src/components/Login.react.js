@@ -22,9 +22,7 @@ class Login extends Component{
         }}>
           <input ref={node => { uName = node }} defaultValue={"user name"}/>
           <input ref={node => { uPassword = node }} defaultValue={"password"}/>
-          <button type="register">
-            Search
-          </button>
+          <button type="submit"> Register </button>
         </form>
       </div>
     )
