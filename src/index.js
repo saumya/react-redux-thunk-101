@@ -9,7 +9,7 @@ import thunk from 'redux-thunk'
 
 import ApplicationContainer from './containers/ApplicationContainer'
 
-import {initialStateUtil, getInitialState,generateTree} from './util/initialStateUtil'
+import initialStateUtil, {getInitialState,generateTree} from './util/initialStateUtil'
 
 //
 //var store = createStore(reducer, initialState,applyMiddleware);
