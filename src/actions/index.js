@@ -1,6 +1,20 @@
 //
 import {ActionNames} from '../util/AppConstants'
 
+function testCallAPI() {
+  return fetch('https://www.google.com/search?q=secret+sauce');
+}
+
+export const dummyAPIAction = (username,password) => {
+  console.log('actions : loginAction :',username,password);
+  return function (dispatch) {
+    return testCallAPI().then(
+      success => dispatch(makeASandwich(forPerson, sauce)),
+      error => dispatch(apologize('The Sandwich Shop', forPerson, error))
+    );
+  };
+}
+
 export const loginAction = (username,password) => {
   console.log('actions : loginAction :',username,password);
   return {

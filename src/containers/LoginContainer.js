@@ -1,7 +1,7 @@
 //
 import React from 'react'
 import { connect } from 'react-redux'
-import { loginAction } from '../actions'
+import { loginAction, dummyAPIAction } from '../actions'
 
 let LoginContainer = ({ dispatch }) => {
   var uName,uPassword ;
@@ -22,7 +22,8 @@ let LoginContainer = ({ dispatch }) => {
           return
         }
 
-        dispatch(loginAction(uName.value,uPassword.value))
+        //dispatch(loginAction(uName.value,uPassword.value))
+        dispatch(dummyAPIAction(uName.value,uPassword.value))
         //uName.value = uPassword.value = ''
       }}>
         <input ref={node1 => { uName = node1 }} />
