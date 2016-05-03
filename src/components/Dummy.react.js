@@ -3,7 +3,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 //import { addTodo } from '../actions'
 
-let Login = ({ dispatch }) => {
+let Dummy = ({ dispatch }) => {
   var uName,uPassword ;
   var that = this ;
   return (
@@ -33,5 +33,5 @@ let Login = ({ dispatch }) => {
   )
 }
 
-Login = connect()(Login)
-export default Login
+Dummy = connect()(Dummy)
+export default Dummy
