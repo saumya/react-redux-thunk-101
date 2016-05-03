@@ -1,9 +1,15 @@
 //
+// Why this is not working ?!
+// bundle.js:22120 Uncaught ReferenceError: dispatch is not defined
+//
 import React, {Component} from 'react'
 import { connect } from 'react-redux'
 //import { addTodo } from '../actions'
 
 class Dummy extends Component{
+  constructor(props){
+    super(props)
+  }
   render(){
     var uName,uPassword ;
     var that = this ;

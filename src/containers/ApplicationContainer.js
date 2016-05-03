@@ -42,7 +42,6 @@ const App = () => (
   <div>
     <Menu />
     <LoginContainer />
-    <Dummy />
     Welcome to React-Redux-Thunk 101
     <div> version {AppConstants.VERSION} </div>
     <div> by {AppConstants.AUTHOR} </div>
