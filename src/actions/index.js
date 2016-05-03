@@ -2,7 +2,7 @@
 import {ActionNames} from '../util/AppConstants'
 
 function testCallAPI() {
-  return fetch('https://www.google.com/search?q=secret+sauce');
+  return fetch('https://httpbin.org/get');
 }
 
 const successAction = (username,password,success)=>{
