@@ -1,33 +1,36 @@
+
+
+
+
 import React from 'react'
 import { connect } from 'react-redux'
 //import { addTodo } from '../actions'
 
 let Login = ({ dispatch }) => {
-  let input1
-  let input2
-
+  var uName,uPassword ;
+  var that = this ;
   return (
     <div>
       <form onSubmit={e => {
         e.preventDefault()
 
-        console.group("Add Contact : '%s'", 'AddContact');
-        console.log('Add Contact');
+        console.group("Login : '%s'", 'Login');
+        console.log('Login');
         console.log(dispatch);
-        console.log('input1', input1, input1.value);
-        console.log('input2', input2, input2.value);
+        console.log('Login : Submit : uName', uName.value.trim());
+        console.log('Login : Submit : uPassword', uPassword.value.trim());
         console.groupEnd();
 
-        if (!input1.value.trim() || !input2.value.trim() ) {
+        if (!uName.value.trim() || !uPassword.value.trim() ) {
           return
         }
 
-        //dispatch(addTodo(input1.value,input2.value))
-        //input1.value = input2.value = ''
+        //dispatch(addTodo(uName.value,uPassword.value))
+        //uName.value = uPassword.value = ''
       }}>
-        <input ref={node1 => { input1 = node1 }} />
-        <input ref={node2 => { input2 = node2 }} />
-        <button type="submit"> Add Contact </button>
+        <input ref={node1 => { uName = node1 }} />
+        <input ref={node2 => { uPassword = node2 }} />
+        <button type="submit"> Login </button>
       </form>
     </div>
   )
