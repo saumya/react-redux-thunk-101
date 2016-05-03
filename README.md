@@ -3,8 +3,9 @@ React-Redux-Thunk-101
 
 [REST calls / API calls][2] in study using [Thunk middleware][3] for React
 
-Referring [Example codes][4]
-
+### References
+1. Start using React Redux [without ES6 or Webpack.][5]
+2. Official [Example codes][4]
 
 Setup
 ```
@@ -34,3 +35,4 @@ npm run pack
 [2]: http://redux.js.org/docs/advanced/AsyncActions.html
 [3]: https://github.com/gaearon/redux-thunk
 [4]: github.com/reactjs/redux/blob/master/examples
+[5]: https://medium.com/@firasd/quick-start-tutorial-using-redux-in-react-apps-89b142d6c5c1
