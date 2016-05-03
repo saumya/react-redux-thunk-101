@@ -37,7 +37,7 @@ import AppConstants from '../util/AppConstants'
 const App = () => (
   <div>
     Welcome to React-Redux-Thunk 101
-    <div> version {AppConstants.VERSION} </div> 
+    <div> version {AppConstants.VERSION} </div>
     <div> by {AppConstants.AUTHOR} </div>
   </div>
 )
