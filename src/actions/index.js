@@ -7,9 +7,19 @@ function testCallAPI() {
 
 const successAction = (username,password,success)=>{
   console.log('SUCCESS : successAction : ',username,password,success);
+  return {
+    type: 'SUCCESS_LOGIN',
+    username: username,
+    password: password
+  }
 }
 const failAction = (username,password,error)=>{
   console.log('Fail : failAction : ',username,password,error);
+  return {
+    type: 'FAIL_LOGIN',
+    username: username,
+    password: password
+  }
 }
 
 export const dummyAPIAction = (username,password) => {
