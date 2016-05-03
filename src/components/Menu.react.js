@@ -11,14 +11,20 @@ class Menu extends Component {
     var that = this;
     return (
       <ul>
-        <li onClick={that._onClick}>Home</li>
-        <li>Login</li>
-        <li>Register</li>
+        <li onClick={that._onHomeClick}>Home</li>
+        <li onClick={that._onLoginClick}>Login</li>
+        <li onClick={that._onRegisterClick}>Register</li>
       </ul>
     );
   }
-  _onClick(){
-    console.log('Home:_onClick');
+  _onHomeClick(){
+    console.log('Menu:_onHomeClick');
+  }
+  _onLoginClick(){
+    console.log('Menu:_onLoginClick');
+  }
+  _onRegisterClick(){
+    console.log('Menu:_onRegisterClick');
   }
 }
  export default Menu;
