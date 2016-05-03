@@ -3,6 +3,7 @@
 export function getInitialState(){
   console.log('getInitialState');
   var a = {
+    UIState: "home",
     DummyReducer:{version:0,called:0},
     OneReducer:{version:0,called:0}
   }
