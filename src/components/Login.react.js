@@ -7,22 +7,22 @@ class Login extends Component{
     super(props)
   }
   render(){
-    var input;
+    var uName,uPassword;
     return (
       <div>
         <form onSubmit={e => {
           e.preventDefault()
-          console.log('Login : Submit : ',input.value.trim());
-          if (!input.value.trim()) {
+          console.log('Login : Submit : uName', uName.value.trim());
+          console.log('Login : Submit : uPassword', uPassword.value.trim());
+          if (!uName.value.trim() || !uPassword.value.trim()) {
             return
           }
           //dispatch(addTodo(input.value))
           //input.value = ''
         }}>
-          <input ref={node => {
-            input = node
-          }} defaultValue={"type here"}/>
-          <button type="submit">
+          <input ref={node => { uName = node }} defaultValue={"user name"}/>
+          <input ref={node => { uPassword = node }} defaultValue={"password"}/>
+          <button type="register">
             Search
           </button>
         </form>
