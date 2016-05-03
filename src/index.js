@@ -9,7 +9,7 @@ import thunk from 'redux-thunk'
 
 import ApplicationContainer from './containers/ApplicationContainer'
 
-// initial state must have keys as the combineReducers
+// initial state must have keys as per the reducers passed to combineReducers
 var initialState = {
   DummyReducer:{version:0,called:0},
   OneReducer:{version:0,called:0}
