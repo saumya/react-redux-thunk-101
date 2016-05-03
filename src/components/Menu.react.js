@@ -17,8 +17,9 @@ class Menu extends Component {
       </ul>
     );
   }
-  _onHomeClick(){
-    console.log('Menu:_onHomeClick');
+  _onHomeClick(e){
+    console.log('Menu:_onHomeClick: synthetic event:',e);
+    console.log('Menu:_onHomeClick: native event:',e.nativeEvent);
   }
   _onLoginClick(){
     console.log('Menu:_onLoginClick');
